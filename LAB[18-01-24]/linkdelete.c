@@ -138,3 +138,12 @@ void delete_at_pos()
 
 void display()
 {
+    struct node *p= head;
+    printf("List:\n");
+     while(p != NULL)
+    {
+        printf("%d ->",p->data);
+        p=p->next;
+    }
+    printf("NULL\n");
+}
